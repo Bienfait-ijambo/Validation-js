@@ -1,4 +1,4 @@
-module.exports = function validationRules() {
+module.exports = function rulesArray() {
   return [
     {
       type: "required",
@@ -32,6 +32,10 @@ module.exports = function validationRules() {
       type: "max",
       message: "",
     },
+
+
+    //rules with pipe sign  (|)
+    
    
   ];
 };
