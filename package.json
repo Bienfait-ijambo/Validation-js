@@ -1,0 +1,14 @@
+{
+  "name": "promise-lib",
+  "version": "1.0.0",
+  "description": "promise clone library",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}
