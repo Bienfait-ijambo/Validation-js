@@ -32,9 +32,6 @@ module.exports = function validationRules() {
       type: "max",
       message: "",
     },
-    {
-      type: "link",
-      message: "",
-    },
+   
   ];
 };

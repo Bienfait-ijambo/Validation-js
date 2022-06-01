@@ -1,4 +1,4 @@
-//import api methods"
+//import api methods and classes"
 const requireStringInArray = require("./api/requireStringInArray");
 const validationRules = require("./api/validationRules");
 const Validator = require("./api/validator/validator");
@@ -56,7 +56,7 @@ class Validate extends Validator {
 }
 
 const user = {
-  name: "",
+  name: 12,
   email: "",
   password: "",
 };

@@ -13,11 +13,28 @@ class Rules {
     }
   }
 
-  string(field,objValue){
-      if( typeof parseInt(objValue) === 'number'){
-        this.errors.push(`The ${field} must be a string`);
-      }
+  string(field, objValue) {
+    if (typeof objValue === 'string') {
+      this.errors.push(`The ${field} must be a string`);
+    }
   }
+
+  email(field,objValue) {
+    var emailRegex = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
+    if(!emailRegex.test(objValue)){
+      this.errors.push(`The ${field} must be a valid email`)
+    }
+  }
+
+  number() {
+    if (typeof parseInt(objValue) !== "number") {
+      this.errors.push(`The ${field} must be a string`);
+    }
+  }
+
+ 
+
+  date() {}
 }
 
-module.exports=Rules
+module.exports = Rules;
